@@ -1,0 +1,129 @@
+@font-face {
+    font-family: jas;
+    src: url(/fonts/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.woff);
+}
+
+@font-face {
+    font-family: nod;
+    src: url(/fonts/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.woff);
+}
+*{
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    
+}
+
+body {
+    font-family: jas;
+    /* background-color: #f4f4f4; */
+    background-image: linear-gradient(to bottom right, #fe22dd, #26cfc4);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    height: 80vh;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: nod;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    /* opacity: 0.5; */
+}
+
+.task button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+    background-color: #aa1818;
+}
+
+.task-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.task-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.task-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #388e3c;
+}
+/* ------------------Responsive--------------- */
+@media screen and (max-width: 600px) {
+    body{
+        margin: 20px;
+    }
+    .container {
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .task-form {
+        flex-direction: column;
+    }
+
+    .task-form input[type="text"] {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+    .task-form button {
+        width: 100%;
+    }
+}
