@@ -39,7 +39,6 @@ body {
     width: 5px; /* Width of the scrollbar */
 }
 
-
 h1 {
     text-align: center;
 }
@@ -53,12 +52,13 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #5e5c5c;
     font-family: nod;
 }
 
 .task.completed {
     text-decoration: line-through;
+    /* background-color: #43e97d; */
     /* opacity: 0.5; */
 }
 
