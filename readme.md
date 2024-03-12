@@ -17,16 +17,11 @@ To run this application locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/Shubham-Parse/ToDo.git
     ```
 
-2. **Navigate to the project directory:**
 
-    ```bash
-    cd your-repository
-    ```
-
-3. **Open the index.html file:**
+2. **Open the index.html file:**
 
     - **Using a Web Browser:**
 
@@ -43,6 +38,11 @@ To run this application locally, follow these steps:
     ```
 
     Then, open your web browser and go to `http://localhost:8000` to view the application.
+
+   ## Live link
+
+Open with the link given below -  
+    https://to-do-gold-three.vercel.app/
 
 ## Usage
 
