@@ -31,15 +31,8 @@ To run this application locally, follow these steps:
 
         If you have Visual Studio Code installed along with the Live Server extension, you can right-click on the `index.html` file, select "Open with Live Server", and it will open the application in your default web browser.
 
-    Alternatively, you can use a local server to serve the files. For example, if you have Python installed, you can run the following command in your terminal:
 
-    ```bash
-    python -m http.server
-    ```
-
-    Then, open your web browser and go to `http://localhost:8000` to view the application.
-
-   ## Live link
+ ## Live link
 
 Open with the link given below -  
     https://to-do-gold-three.vercel.app/
