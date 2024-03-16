@@ -53,28 +53,42 @@ h1 {
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #5e5c5c;
+    /* font-family: nod; */
     font-family: nod;
+    /* font-weight: 600;     */
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.task.completed {
-    text-decoration: line-through;
-    /* background-color: #43e97d; */
-    /* opacity: 0.5; */
+.active {
+    /* Styles for active tasks */
+    background-color: #f36f6f;
+    /* color: white; */
 }
+
+.completed {
+    /* Styles for completed tasks */
+    background-color: #cafc78;
+    text-decoration: line-through; /* Add line-through effect for completed tasks */
+}
+
 
 .task button {
     margin-left: auto;
     padding: 5px 10px;
-    background-color: #f44336;
+    background-color: #000000;
     color: #fff;
-    border: none;
+    border: 1px solid white;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
 
 .task button:hover {
-    background-color: #aa1818;
+    background-color: #191818;
 }
 
 .task-form {
